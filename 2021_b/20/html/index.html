@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <!--<link rel="stylesheet" href="css/main.css">-->
+        <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-blue.min.css">
         
@@ -12,6 +12,7 @@
     <body>
         <!--The whole layout-->
         <div class="mdl-layout mdl-js-layout">
+            
             <!--The navbar-->
             <header class="mdl-layout__header">
                 <div class="mdl-layout-icon"></div>
@@ -25,6 +26,7 @@
                     </nav>
                 </div>
             </header>
+            
             <!--The slide-in menu-->
             <div class="mdl-layout__drawer">
                 <span class="mdl-layout__title">Python Tutorial</span>
@@ -35,9 +37,23 @@
                 </nav>
             </div>
             
-            
+            <!--Page content-->
             <main class="mdl-layout__content">
-
+                <!--What is python card-->
+                <div class="mdl-card mdl-shadow--16dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">What is Python</h2>
+                    </div>
+                    <div class="mdl-card__media">
+                        <img src="../img/python_card_logo.jpg" id="python_card_logo" alt="">
+                    </div>
+                    <div class="card-text mdl-card__supporting-text">
+                        Python is a simple and powerful scripting programming language.
+                    </div>
+                    <div class="mdl-card__actions">
+                        <a href="https://www.python.org/">Python Website</a>
+                    </div>
+                </div>
             </main>
         </div>
     </body>
