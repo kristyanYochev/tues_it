@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Python Tutorial</title>
 
@@ -13,7 +13,7 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-        <!--<script src="js/main.js"></script>-->
+        <script src="../js/main.js"></script>
     </head>
     <body>
         <!--The whole layout-->
@@ -26,9 +26,9 @@
                     <span class="mdl-layout__title">Python Tutorial</span>
                     <div class="mdl-layout-spacer"></div>
                     <nav class="mdl-navigation">
-                        <a class="mdl-navigation__link">Overeview</a>
-                        <a class="mdl-navigation__link">Prerequisites</a>
-                        <a class="mdl-navigation__link">Tutorial</a>
+                        <a class="mdl-navigation__link" href="" id="overview_navbar">Overeview</a>
+                        <a class="mdl-navigation__link" href="prerequisites.html">Prerequisites</a>
+                        <a class="mdl-navigation__link" href="tutorial.html">Tutorial</a>
                     </nav>
                 </div>
             </header>
@@ -37,9 +37,24 @@
             <div class="mdl-layout__drawer">
                 <span class="mdl-layout__title">Python Tutorial</span>
                 <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link">Overeview</a>
-                    <a class="mdl-navigation__link">Prerequisites</a>
-                    <a class="mdl-navigation__link">Tutorial</a>
+                    
+                    <a class="mdl-navigation__link" href="#" id="overview">Overeview</a>
+                    <nav class="mdl-navigation" id="overview_sub">
+                        <a class="mdl-navigation__link" href="#what">What is Python</a>
+                        <a class="mdl-navigation__link" href="#why">Why should I learn Python</a>
+                    </nav>
+
+                    <a class="mdl-navigation__link" href="#" id="prerequisites">Prerequisites</a>
+                    <nav class="mdl-navigation" id="prerequisites_sub">
+                        <a class="mdl-navigation__link" href="#install">Installing Python</a>
+                        <a class="mdl-navigation__link" href="#test">Testing Python</a>
+                    </nav>
+                    
+                    <a class="mdl-navigation__link" href="#" id="tutorial">Tutorial</a>
+                    <nav class="mdl-navigation" id="tutorial_sub">
+                        <a class="mdl-navigation__link" href="#hello_world">First Program</a>                  
+                    </nav>
+                    
                 </nav>
             </div>
             
@@ -47,20 +62,60 @@
             <!--Page content-->
             <main class="mdl-layout__content">
                 <!--What is python card-->
-                <div class="center mdl-card mdl-shadow--16dp">
+                <div class="center mdl-card mdl-shadow--16dp" id="what">
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">What is Python</h2>
                     </div>
                     <div class="mdl-card__media">
                         <img src="../img/python_card_logo.jpg" id="python_card_logo" alt="">
                     </div>
-                    <div class="card-text mdl-card__supporting-text">
+                    <div class="mdl-card__supporting-text">
                         Python is a simple and powerful scripting programming language.
                     </div>
-                    <div class="mdl-card__actions">
+                    <div class="mdl-card__actions mdl-card--border">
                         <a href="https://www.python.org/" class="card_action">Python Website</a>
                     </div>
                 </div>
+
+                <!--Why learn py-->
+                <div class="center mdl-card mdl-shadow--16dp" id="why">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Why should I learn Python</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Python is really great. It has use in almost any part of software - from web servers to game development.
+                        It's easy to read and has a very simple syntax unlike some other languages like C or Java.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="tutorial.html" class="card_action">Tutorial</a>
+                    </div>
+                </div>
+
+                <!--Install Python-->
+                <div class="center mdl-card mdl-shadow--16dp" id="install">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Installing Python</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Go to <a href="https://www.python.org/downloads/">Python's website</a> and download the latest version for your OS.
+                        After that, open the install file you just downloaded and install Python like a normal program.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="card_action" href="https://www.python.org/downloads/">Python Downloads Page</a>
+                    </div>
+                </div>
+
+                <!--Test Python-->
+                <div class="center mdl-card mdl-shadow--16dp" id="test">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Testing if python is working</h2> 
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Open up the search bar on your computer and search for "IDLE". Open the program. There should be a terminal-like interface. Type in "import this".
+                        If it shows the zen of python, then you are all set.
+                    </div>
+                </div>
+
             </main>
         </div>
     </body>
